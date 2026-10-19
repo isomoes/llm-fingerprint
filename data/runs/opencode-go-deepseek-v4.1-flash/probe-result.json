@@ -1,0 +1,274 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "provider": "opencode.ai",
+  "api_type": "openai",
+  "temperature": 1,
+  "reps": 30,
+  "concurrency": 4,
+  "requests": 450,
+  "failures": 0,
+  "cells": [
+    {
+      "task_id": "num100-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "37": 0.0667,
+        "42": 0.5667,
+        "57": 0.0333,
+        "67": 0.0333,
+        "73": 0.2,
+        "74": 0.0333,
+        "79": 0.0333,
+        "97": 0.0333
+      },
+      "entropy_bits": 2.006,
+      "mode": "42",
+      "mode_share": 0.5667
+    },
+    {
+      "task_id": "num10-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "4": 0.0333,
+        "6": 0.0333,
+        "7": 0.9,
+        "8": 0.0333
+      },
+      "entropy_bits": 0.627,
+      "mode": "7",
+      "mode_share": 0.9
+    },
+    {
+      "task_id": "num-favorite",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "4": 0.0667,
+        "7": 0.8667,
+        "27": 0.0333,
+        "42": 0.0333
+      },
+      "entropy_bits": 0.766,
+      "mode": "7",
+      "mode_share": 0.8667
+    },
+    {
+      "task_id": "letter-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "k": 0.9667,
+        "j": 0.0333
+      },
+      "entropy_bits": 0.211,
+      "mode": "k",
+      "mode_share": 0.9667
+    },
+    {
+      "task_id": "word-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "sonder": 0.0333,
+        "whisper": 0.0333,
+        "gentle": 0.0333,
+        "jubilant": 0.0333,
+        "plum": 0.0333,
+        "serendipity": 0.3333,
+        "mountain": 0.1333,
+        "cerulean": 0.0333,
+        "radiant": 0.0333,
+        "petrichor": 0.0333,
+        "harmony": 0.0333,
+        "gravity": 0.0667,
+        "paper": 0.0333,
+        "determination": 0.0333,
+        "journey": 0.0333,
+        "breeze": 0.0333,
+        "library": 0.0333
+      },
+      "entropy_bits": 3.465,
+      "mode": "serendipity",
+      "mode_share": 0.3333
+    },
+    {
+      "task_id": "color-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "jade": 0.0667,
+        "indigo": 0.2,
+        "cerulean": 0.3,
+        "teal": 0.3333,
+        "periwinkle": 0.0333,
+        "amber": 0.0667
+      },
+      "entropy_bits": 2.198,
+      "mode": "teal",
+      "mode_share": 0.3333
+    },
+    {
+      "task_id": "color-favorite",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 22,
+      "n_off_format": 8,
+      "validity_rate": 0.7333,
+      "dist": {
+        "blue": 1
+      },
+      "entropy_bits": 0,
+      "mode": "blue",
+      "mode_share": 1
+    },
+    {
+      "task_id": "animal-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "quokka": 0.2667,
+        "ocelot": 0.0667,
+        "okapi": 0.1,
+        "giraffe": 0.1667,
+        "pangolin": 0.1333,
+        "octopus": 0.0333,
+        "kangaroo": 0.1,
+        "wolverine": 0.0667,
+        "kinkajou": 0.0667
+      },
+      "entropy_bits": 2.936,
+      "mode": "quokka",
+      "mode_share": 0.2667
+    },
+    {
+      "task_id": "city-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "lusaka": 0.0333,
+        "kinshasa": 0.0667,
+        "kigali": 0.7667,
+        "kyoto": 0.0333,
+        "nairobi": 0.0333,
+        "ulaanbaatar": 0.0667
+      },
+      "entropy_bits": 1.305,
+      "mode": "kigali",
+      "mode_share": 0.7667
+    },
+    {
+      "task_id": "coin-flip",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "tails": 0.7667,
+        "heads": 0.2333
+      },
+      "entropy_bits": 0.784,
+      "mode": "tails",
+      "mode_share": 0.7667
+    },
+    {
+      "task_id": "coord-num10",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "7": 1
+      },
+      "entropy_bits": 0,
+      "mode": "7",
+      "mode_share": 1
+    },
+    {
+      "task_id": "coord-color",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "blue": 1
+      },
+      "entropy_bits": 0,
+      "mode": "blue",
+      "mode_share": 1
+    },
+    {
+      "task_id": "coord-city",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "paris": 0.4,
+        "tokyo": 0.5333,
+        "kyoto": 0.0333,
+        "london": 0.0333
+      },
+      "entropy_bits": 1.339,
+      "mode": "tokyo",
+      "mode_share": 0.5333
+    },
+    {
+      "task_id": "anticoord-num10",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "7": 1
+      },
+      "entropy_bits": 0,
+      "mode": "7",
+      "mode_share": 1
+    },
+    {
+      "task_id": "secret-password",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "pamela2026": 1
+      },
+      "entropy_bits": 0,
+      "mode": "pamela2026",
+      "mode_share": 1
+    }
+  ]
+}

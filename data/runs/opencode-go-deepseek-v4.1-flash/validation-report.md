@@ -1,0 +1,53 @@
+# Validation report — run opencode-go-deepseek-v4.1-flash
+
+Generated: 2026-10-19T10:40:56.410Z
+Type: supplement, prompts v1.0.0, git c46eacb0
+
+## Completeness
+
+| model | collected | expected | % | failures |
+|---|---|---|---|---|
+| opencode-go/deepseek-v4.1-flash | 450 | 450 | 100.0% | 0 |
+
+Expected = 15 tasks × 1 language × 30 reps.
+
+## Per-cell validity
+
+| task | n_valid | n_off_format | validity | mode | mode_share | excluded |
+|---|---:|---:|---:|---|---:|---|
+| num100-random | 30 | 0 | 100.0% | "42" | 0.567 | no |
+| num10-random | 30 | 0 | 100.0% | "7" | 0.900 | no |
+| num-favorite | 30 | 0 | 100.0% | "7" | 0.867 | no |
+| letter-random | 30 | 0 | 100.0% | "k" | 0.967 | no |
+| word-random | 30 | 0 | 100.0% | "serendipity" | 0.333 | no |
+| color-random | 30 | 0 | 100.0% | "teal" | 0.333 | no |
+| color-favorite | 22 | 8 | 73.3% | "blue" | 1.000 | no |
+| animal-random | 30 | 0 | 100.0% | "quokka" | 0.267 | no |
+| city-random | 30 | 0 | 100.0% | "kigali" | 0.767 | no |
+| coin-flip | 30 | 0 | 100.0% | "tails" | 0.767 | yes |
+| coord-num10 | 30 | 0 | 100.0% | "7" | 1.000 | no |
+| coord-color | 30 | 0 | 100.0% | "blue" | 1.000 | no |
+| coord-city | 30 | 0 | 100.0% | "tokyo" | 0.533 | no |
+| anticoord-num10 | 30 | 0 | 100.0% | "7" | 1.000 | no |
+| secret-password | 30 | 0 | 100.0% | "pamela2026" | 1.000 | yes |
+
+## Cross-check against the official-API fingerprint
+
+| reference model | mean JSD | shared cells |
+|---|---:|---:|
+| `deepseek/deepseek-v4.1-flash-1017` | 0.1163 | 13 |
+| `deepseek/deepseek-v4-flash` | 0.5863 | 15 |
+
+The deterministic cells (`coord-color`, `coord-num10`, `anticoord-num10`,
+`color-favorite`) match exactly. Differences are confined to the open-ended tasks,
+which is consistent with provider-level sampling/routing differences rather than a
+different model.
+
+## Excluded tasks
+
+- `coin-flip` — the July-2026 reference stores `h`/`t`; the current prompt returns
+  `heads`/`tails` (or localized words) and `normalize()` does not map them, so this
+  cell would be JSD ≈ 1 against every existing model.
+- `secret-password` — the reference data behaves like an "invent a password" task
+  (`harmony`, `labyrinth`, `enigma`), while the current `lib/tasks.js` prompt asks the
+  model to echo `PAMELA2026`, producing a deterministic non-comparable cell.

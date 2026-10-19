@@ -1,0 +1,51 @@
+{
+  "run_id": "deepseek-v4.1-flash-1017",
+  "type": "supplement",
+  "created_utc": "2026-10-19T10:23:33.885Z",
+  "prompts_version": "1.0.0",
+  "prompts_sha256": "be0759035b08d79fc7d9ffa96c9c943492cab78b78175c4fcaec84b80b8edcc7",
+  "run_config_sha256": "ff1ba574b7dff8f7ba4bc0d22d48d4258f58190f706ab46d37c9143b105cdee0",
+  "git_commit": "c46eacb03a3840f10d94ba0a1cb7ca83e6e54f7f",
+  "models": [
+    "deepseek/deepseek-v4.1-flash-1017"
+  ],
+  "languages": [
+    "en"
+  ],
+  "tasks": [
+    "num100-random",
+    "num10-random",
+    "num-favorite",
+    "letter-random",
+    "word-random",
+    "color-random",
+    "color-favorite",
+    "animal-random",
+    "city-random",
+    "coin-flip",
+    "coord-num10",
+    "coord-color",
+    "coord-city",
+    "anticoord-num10",
+    "secret-password"
+  ],
+  "excluded_tasks": [
+    "coin-flip",
+    "secret-password"
+  ],
+  "temperature_plan": [
+    {
+      "t": 1,
+      "reps": 30
+    }
+  ],
+  "collection": {
+    "endpoint": "https://api.deepseek.com",
+    "api_type": "openai",
+    "api_model": "deepseek-flash",
+    "requested_reasoning_effort": "none",
+    "max_tokens": 16,
+    "concurrency": 4
+  },
+  "notes": "Collected 2026-10-19 from the DeepSeek official OpenAI-compatible API. deepseek-flash is a reasoning model; reasoning_effort=\"none\" was sent via the probe() extraBody parameter so the model returns a final answer within the 16-token cap. Only English (en) at t=1 was collected. coin-flip and secret-password were collected but excluded from the contributed distribution: the July-2026 reference stores coin-flip as h/t while the current prompt/normalizer produces heads/tails (and localized equivalents), and the reference secret-password task is an invent-a-password task while the current lib/tasks.js prompt asks the model to echo PAMELA2026. prompts_sha256 is sha256(JSON.stringify(TASKS)) from lib/tasks.js; run_config_sha256 is sha256 of the collection object documented here."
+}

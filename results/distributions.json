@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-07-08T17:31:29.042Z",
-  "n_cells": 10540,
+  "generated_utc": "2026-10-19T10:40:56.410Z",
+  "n_cells": 10566,
   "distributions": [
     {
       "model": "microsoft/phi-4",
@@ -205015,6 +205015,491 @@
       },
       "entropy_bits": 0,
       "mode": "h",
+      "mode_share": 1
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "task_id": "num100-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "37": 0.0667,
+        "42": 0.3,
+        "43": 0.0333,
+        "47": 0.0667,
+        "56": 0.0333,
+        "57": 0.0333,
+        "63": 0.0333,
+        "72": 0.0667,
+        "73": 0.3667
+      },
+      "entropy_bits": 2.487,
+      "mode": "73",
+      "mode_share": 0.3667
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "task_id": "num10-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "4": 0.0333,
+        "7": 0.9667
+      },
+      "entropy_bits": 0.211,
+      "mode": "7",
+      "mode_share": 0.9667
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "task_id": "num-favorite",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "7": 0.9,
+        "42": 0.0667,
+        "there isn't one favorite number, but a commonly liked one is 7": 0.0333
+      },
+      "entropy_bits": 0.561,
+      "mode": "7",
+      "mode_share": 0.9
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "task_id": "letter-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "k": 0.8333,
+        "m": 0.1,
+        "j": 0.0333,
+        "n": 0.0333
+      },
+      "entropy_bits": 0.878,
+      "mode": "k",
+      "mode_share": 0.8333
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "task_id": "word-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "serendipity": 0.5667,
+        "journey": 0.0333,
+        "persimmon": 0.0333,
+        "melancholy": 0.0333,
+        "jalopy": 0.0333,
+        "jubilant": 0.0333,
+        "paper": 0.0333,
+        "umbrella": 0.0333,
+        "persistence": 0.0667,
+        "jasmine": 0.0333,
+        "library": 0.0333,
+        "river": 0.0333,
+        "peninsula": 0.0333
+      },
+      "entropy_bits": 2.523,
+      "mode": "serendipity",
+      "mode_share": 0.5667
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "task_id": "color-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "cerulean": 0.5667,
+        "indigo": 0.2667,
+        "marigold": 0.0333,
+        "amber": 0.1,
+        "cobalt": 0.0333
+      },
+      "entropy_bits": 1.632,
+      "mode": "cerulean",
+      "mode_share": 0.5667
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "task_id": "color-favorite",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 27,
+      "n_off_format": 3,
+      "validity_rate": 0.9,
+      "dist": {
+        "blue": 1
+      },
+      "entropy_bits": 0,
+      "mode": "blue",
+      "mode_share": 1
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "task_id": "animal-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "ocelot": 0.1333,
+        "okapi": 0.1333,
+        "octopus": 0.0667,
+        "kangaroo": 0.0333,
+        "pangolin": 0.3,
+        "quokka": 0.1333,
+        "wombat": 0.0333,
+        "kinkajou": 0.0333,
+        "flamingo": 0.0667,
+        "heron": 0.0333,
+        "giraffe": 0.0333
+      },
+      "entropy_bits": 3.022,
+      "mode": "pangolin",
+      "mode_share": 0.3
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "task_id": "city-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "kigali": 0.9333,
+        "ulaanbaatar": 0.0333,
+        "tbilisi": 0.0333
+      },
+      "entropy_bits": 0.42,
+      "mode": "kigali",
+      "mode_share": 0.9333
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "task_id": "coord-num10",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "7": 1
+      },
+      "entropy_bits": 0,
+      "mode": "7",
+      "mode_share": 1
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "task_id": "coord-color",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "blue": 1
+      },
+      "entropy_bits": 0,
+      "mode": "blue",
+      "mode_share": 1
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "task_id": "coord-city",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "paris": 0.6667,
+        "tokyo": 0.3,
+        "london": 0.0333
+      },
+      "entropy_bits": 1.074,
+      "mode": "paris",
+      "mode_share": 0.6667
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "task_id": "anticoord-num10",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "7": 1
+      },
+      "entropy_bits": 0,
+      "mode": "7",
+      "mode_share": 1
+    },
+    {
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "task_id": "num100-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "37": 0.0667,
+        "42": 0.5667,
+        "57": 0.0333,
+        "67": 0.0333,
+        "73": 0.2,
+        "74": 0.0333,
+        "79": 0.0333,
+        "97": 0.0333
+      },
+      "entropy_bits": 2.006,
+      "mode": "42",
+      "mode_share": 0.5667
+    },
+    {
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "task_id": "num10-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "4": 0.0333,
+        "6": 0.0333,
+        "7": 0.9,
+        "8": 0.0333
+      },
+      "entropy_bits": 0.627,
+      "mode": "7",
+      "mode_share": 0.9
+    },
+    {
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "task_id": "num-favorite",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "4": 0.0667,
+        "7": 0.8667,
+        "27": 0.0333,
+        "42": 0.0333
+      },
+      "entropy_bits": 0.766,
+      "mode": "7",
+      "mode_share": 0.8667
+    },
+    {
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "task_id": "letter-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "k": 0.9667,
+        "j": 0.0333
+      },
+      "entropy_bits": 0.211,
+      "mode": "k",
+      "mode_share": 0.9667
+    },
+    {
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "task_id": "word-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "sonder": 0.0333,
+        "whisper": 0.0333,
+        "gentle": 0.0333,
+        "jubilant": 0.0333,
+        "plum": 0.0333,
+        "serendipity": 0.3333,
+        "mountain": 0.1333,
+        "cerulean": 0.0333,
+        "radiant": 0.0333,
+        "petrichor": 0.0333,
+        "harmony": 0.0333,
+        "gravity": 0.0667,
+        "paper": 0.0333,
+        "determination": 0.0333,
+        "journey": 0.0333,
+        "breeze": 0.0333,
+        "library": 0.0333
+      },
+      "entropy_bits": 3.465,
+      "mode": "serendipity",
+      "mode_share": 0.3333
+    },
+    {
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "task_id": "color-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "jade": 0.0667,
+        "indigo": 0.2,
+        "cerulean": 0.3,
+        "teal": 0.3333,
+        "periwinkle": 0.0333,
+        "amber": 0.0667
+      },
+      "entropy_bits": 2.198,
+      "mode": "teal",
+      "mode_share": 0.3333
+    },
+    {
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "task_id": "color-favorite",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 22,
+      "n_off_format": 8,
+      "validity_rate": 0.7333,
+      "dist": {
+        "blue": 1
+      },
+      "entropy_bits": 0,
+      "mode": "blue",
+      "mode_share": 1
+    },
+    {
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "task_id": "animal-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "quokka": 0.2667,
+        "ocelot": 0.0667,
+        "okapi": 0.1,
+        "giraffe": 0.1667,
+        "pangolin": 0.1333,
+        "octopus": 0.0333,
+        "kangaroo": 0.1,
+        "wolverine": 0.0667,
+        "kinkajou": 0.0667
+      },
+      "entropy_bits": 2.936,
+      "mode": "quokka",
+      "mode_share": 0.2667
+    },
+    {
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "task_id": "city-random",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "lusaka": 0.0333,
+        "kinshasa": 0.0667,
+        "kigali": 0.7667,
+        "kyoto": 0.0333,
+        "nairobi": 0.0333,
+        "ulaanbaatar": 0.0667
+      },
+      "entropy_bits": 1.305,
+      "mode": "kigali",
+      "mode_share": 0.7667
+    },
+    {
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "task_id": "coord-num10",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "7": 1
+      },
+      "entropy_bits": 0,
+      "mode": "7",
+      "mode_share": 1
+    },
+    {
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "task_id": "coord-color",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "blue": 1
+      },
+      "entropy_bits": 0,
+      "mode": "blue",
+      "mode_share": 1
+    },
+    {
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "task_id": "coord-city",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "paris": 0.4,
+        "tokyo": 0.5333,
+        "kyoto": 0.0333,
+        "london": 0.0333
+      },
+      "entropy_bits": 1.339,
+      "mode": "tokyo",
+      "mode_share": 0.5333
+    },
+    {
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "task_id": "anticoord-num10",
+      "lang": "en",
+      "temperature": 1,
+      "n_valid": 30,
+      "n_off_format": 0,
+      "validity_rate": 1,
+      "dist": {
+        "7": 1
+      },
+      "entropy_bits": 0,
+      "mode": "7",
       "mode_share": 1
     }
   ],
